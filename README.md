@@ -1,16 +1,63 @@
-# cooking_recipes_app
+# Cooking Recipes App
 
-A new Flutter project.
+O Cooking Recipes é um aplicativo para quem gosta de cozinhar e quer ter receitas incríveis na palma da sua mão! O aplicativo possui uma interface simples e intuitiva, onde você poderá acessar um grande catálogo de receitas de maneira organizada, separadas por categorias. Todas receitas possuem seus respectivos ingredientes e passo a passo do modo de preparo. 🧑‍🍳
 
-## Getting Started
+## Índice
 
-This project is a starting point for a Flutter application.
+- **[Como executar o aplicativo?](#Como-executar-o-aplicativo?)**
+- **[Quais são as funcionalidades do aplicativo?](#Quais-são-as-funcionalidades-do-aplicativo?)**
+- **[Quais são as tecnologias e recursos utilizados pelo aplicativo?](#Quais-são-as-tecnologias-e-recursos-utilizados-pelo-aplicativo?)**
+- **[Quais são as próximas evoluções do aplicativo? ](#Quais-são-as-próximas-evoluções-do-aplicativo?)**
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Como executar o aplicativo?
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Primeiramente, é necessário ter o SDK do Flutter (>= 3.1.0) instalado em sua máquina.
+
+Após isso, é só seguir os passos descritos abaixo: 
+
+```bash
+## Clone o repositório
+$ git clone https://github.com/Matheeusb/cooking_recipes_app
+
+## Acesse a pasta raiz do projeto
+$ cd cooking_recipes_app
+
+## Instale as dependências do projeto
+$ flutter pub get
+
+## Execute o aplicativo
+$ flutter run
+```
+
+Para executar os testes unitários, basta executar o comando abaixo na pasta raiz do projeto
+
+```bash
+$ flutter test
+```
+
+## Quais são as funcionalidades do aplicativo?
+
+- Acesso a diversas categorias de receitas
+- Acesso ao catálogo enorme de receitas, separadas por categorias
+- Acesso aos detalhes de cada receita, como ingredientes e modo de fazer
+- Possibilidade de alternar entre o modo claro e escuro no tema do aplicativo 
+
+## Quais são as tecnologias e recursos utilizados pelo aplicativo?
+
+- API [The Meal DB](https://www.themealdb.com/)
+- Flutter versão 3.x
+- Arquitetura baseada nas camadas propostas pelo Clean Architecture
+- Gerenciamento de estados utilizando o Mobx
+- Requisições HTTP utilizando o Dio
+- Injeção de dependências utilizando o GetIt
+- CI utilizando Github Actions (build, analyze e tests)
+- Package para gerenciamento de componentes, tokens e temas de forma independente(cooking_recipes_components)
+
+## Quais são as próximas evoluções do aplicativo? 
+
+- Internacionalização dos textos (l10n)
+- Salvar seleção de tema localmente (Ex.: SharedPreferences, Hive)
+- Estratégia de cache para reduzir o número de requisições
+- Compartilhar receitas (Ex.: SharePlus)
+- Evolução do package cooking_recipes_components (demais componentes e testes)
