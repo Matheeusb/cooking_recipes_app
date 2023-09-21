@@ -10,6 +10,7 @@ O Cooking Recipes é um aplicativo para quem gosta de cozinhar e quer ter receit
 <style>
 .images img {
 	width: 50%;
+    height: auto;
     margin-right: 10px;
 }
 .images img:last-child {
