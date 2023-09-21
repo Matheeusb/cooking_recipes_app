@@ -3,7 +3,7 @@ import 'package:injectable/injectable.dart';
 import '../entities/meal_category.dart';
 import '../repositories/meal_repository.dart';
 
-@injectable
+@Injectable()
 class GetAllMealCategoriesUsecase {
   final MealRepository _repository;
 

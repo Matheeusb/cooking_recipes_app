@@ -21,12 +21,10 @@ abstract class _UserStoreBase with Store {
   @computed
   bool get hasUserName => userData.name.isNotEmpty;
 
-  void setData({String? name, bool? useDarkMode}) {
-    final data = UserData(
-      name: name ?? '',
-      useDarkMode: useDarkMode ?? false,
-    );
-
-    _setUserData(data);
-  }
+  void setData({String? name, bool? useDarkMode}) => _setUserData(
+        UserData(
+          name: name ?? '',
+          useDarkMode: useDarkMode ?? false,
+        ),
+      );
 }

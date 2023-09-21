@@ -10,28 +10,26 @@ import '../../modules/onboarding/presentation/pages/welcome_page.dart';
 import 'app_routes.dart';
 
 class RouteGenerator {
-  static Route<dynamic> generateRoute(RouteSettings settings) {
-    final args = settings.arguments;
-
-    return switch (settings.name) {
-      AppRoutes.initial => MaterialPageRoute(
-          builder: (_) => const SplashPage(),
-        ),
-      AppRoutes.welcome => MaterialPageRoute(
-          builder: (_) => const WelcomePage(),
-        ),
-      AppRoutes.name => MaterialPageRoute(
-          builder: (_) => const NamePage(),
-        ),
-      AppRoutes.home => MaterialPageRoute(
-          builder: (_) => const MenuNavigationPage(),
-        ),
-      AppRoutes.mealDetail => MaterialPageRoute(
-          builder: (_) => MealDetailsPage(meal: args as MealCategoryItem),
-        ),
-      _ => _errorRoute(),
-    };
-  }
+  static Route<dynamic> generateRoute(RouteSettings settings) =>
+      switch (settings.name) {
+        AppRoutes.initial => MaterialPageRoute(
+            builder: (_) => const SplashPage(),
+          ),
+        AppRoutes.welcome => MaterialPageRoute(
+            builder: (_) => const WelcomePage(),
+          ),
+        AppRoutes.name => MaterialPageRoute(
+            builder: (_) => const NamePage(),
+          ),
+        AppRoutes.home => MaterialPageRoute(
+            builder: (_) => const MenuNavigationPage(),
+          ),
+        AppRoutes.mealDetail => MaterialPageRoute(
+            builder: (_) =>
+                MealDetailsPage(meal: settings.arguments as MealCategoryItem),
+          ),
+        _ => _errorRoute(),
+      };
 
   static Route<dynamic> _errorRoute() => MaterialPageRoute(
         builder: (_) => const CRScaffold(

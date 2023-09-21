@@ -1,5 +1,7 @@
 import 'package:equatable/equatable.dart';
+import 'package:flutter/foundation.dart';
 
+@immutable
 class Meal extends Equatable {
   final String idMeal;
   final String strMeal;

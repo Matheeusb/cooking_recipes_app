@@ -4,7 +4,7 @@ import 'package:mobx/mobx.dart';
 
 part 'menu_navigation_store.g.dart';
 
-@singleton
+@Singleton()
 class MenuNavigationStore = _MenuNavigationStoreBase with _$MenuNavigationStore;
 
 abstract class _MenuNavigationStoreBase with Store {

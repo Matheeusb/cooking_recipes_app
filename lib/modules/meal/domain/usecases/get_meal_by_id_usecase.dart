@@ -3,7 +3,7 @@ import 'package:injectable/injectable.dart';
 import '../entities/meal.dart';
 import '../repositories/meal_repository.dart';
 
-@injectable
+@Injectable()
 class GetMealByIdUsecase {
   final MealRepository _repository;
 

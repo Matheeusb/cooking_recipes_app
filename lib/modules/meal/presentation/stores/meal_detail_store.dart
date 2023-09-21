@@ -8,7 +8,7 @@ import '../states/meal_detail_page_state.dart';
 
 part 'meal_detail_store.g.dart';
 
-@singleton
+@Singleton()
 class MeaDetailStore = _MeaDetailStoreBase with _$MeaDetailStore;
 
 abstract class _MeaDetailStoreBase with Store {
