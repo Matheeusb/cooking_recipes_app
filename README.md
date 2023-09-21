@@ -2,25 +2,31 @@
 
 O Cooking Recipes é um aplicativo para quem gosta de cozinhar e quer ter receitas incríveis na palma da sua mão! O aplicativo possui uma interface simples e intuitiva, onde você poderá acessar um grande catálogo de receitas de maneira organizada, separadas por categorias. Todas receitas possuem seus respectivos ingredientes e passo a passo do modo de preparo. 
 
-<div class="images">
-    <img src="./docs/cooking_recipes_app_readme_light.png"/>
-    <img src="./docs/cooking_recipes_app_readme_dark.png"/>
-</div>
+<html>
+<head>
+    <style>
+        .images img {
+	        width: 50%;
+            height: auto;
+            margin-right: 10px;
+        }
+        .images img:last-child {
+            margin-right: 0;
+        }
+        .images {
+            display: flex;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="images">
+        <img src="./docs/cooking_recipes_app_readme_light.png"/>
+        <img src="./docs/cooking_recipes_app_readme_dark.png"/>
+    </div>
+</body>
+</html>
 
-<style>
-.images img {
-	width: 50%;
-    height: auto;
-    margin-right: 10px;
-}
-.images img:last-child {
-    margin-right: 0;
-}
-.images {
-    display: flex;
-    width: 100%;
-}
-</style>
 
 ## Índice
 
