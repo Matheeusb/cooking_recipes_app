@@ -1,0 +1,1 @@
+class MealRepositoryFailure implements Exception {}
